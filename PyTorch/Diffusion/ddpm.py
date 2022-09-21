@@ -80,6 +80,8 @@ class Diffusion:
         x = ((x.clamp(-1,1) + 1 )/2) 
         x = x * 255
         x = x.type(torch.uint8)
+        
+        return x
                 
                 
 
